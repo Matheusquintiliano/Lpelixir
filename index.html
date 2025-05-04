@@ -12,6 +12,24 @@
     <link rel="icon" type="image/png" href="design-sem-nome--21--1-1.png" />
     <script type="module" crossorigin src="assets/index-CPN-jc0j.js"></script>
     <link rel="stylesheet" crossorigin href="assets/index-BsCo384y.css">
+
+<script>
+  // Test if files exist
+  function testFile(url) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', url, false);
+    try {
+      xhr.send();
+      return xhr.status !== 404;
+    } catch(e) {
+      return false;
+    }
+  }
+  
+  console.log('Testing assets/index-CPN-jc0j.js: ' + testFile('assets/index-CPN-jc0j.js'));
+  console.log('Testing assets/index-BsCo384y.css: ' + testFile('assets/index-BsCo384y.css'));
+</script>
+
   </head>
   <body>
     <div id="app"></div>
